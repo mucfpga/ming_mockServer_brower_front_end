@@ -30,12 +30,6 @@ class App extends React.Component {
                             <Menu.Item key="1">
                                 <Link to="/A"><Icon type="api" theme="twoTone" />接口管理</Link>
                             </Menu.Item>
-                            <Menu.Item key="2">
-                                <Link to="/B"><Icon type="file-text" theme="twoTone"/>日志管理</Link>
-                            </Menu.Item>
-                            <Menu.Item key="4">
-                                <a href="dbManager.html"><Icon type="database" theme="twoTone"/>数据库管理</a>
-                            </Menu.Item>
                         </Menu>
                     </Sider>
                     <Layout>
@@ -43,7 +37,6 @@ class App extends React.Component {
                             <div style={{ padding: 24, background: '#fff', minHeight: 360 }}>
                                 <Route exact path="/A" component={InterFaceManager} />
                                 <Route path="/A_1" component={InterFacemanagerDesc} />
-                                <Route path="/B" component={LogManager} />
                             </div>
                         </Content>
                     </Layout>

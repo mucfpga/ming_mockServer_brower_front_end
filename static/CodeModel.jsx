@@ -8,7 +8,7 @@ class CodeModel extends React.Component {
         codeValue=props.functionBody;
         $("#codeEditId").children().remove();
         require.config({
-            baseUrl: 'https://mucfpga.github.io/codeEdit/', paths: { 'vs': 'min/vs' }});
+            baseUrl: 'https://minglie.gitee.io/mingpage/static/public/monacoeditor', paths: { 'vs': 'min/vs' }});
         require(['vs/editor/editor.main'], function() {
             var editor = monaco.editor.create(document.getElementById('codeEditId'), {
                 value: [

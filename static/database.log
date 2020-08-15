@@ -1,5 +1,0 @@
-2019-7-7 21:30:22  
-    select * from sys_server_info  where 1=1   limit  0,10; 
-2019-7-7 21:30:22 
-        select count(1) c from sys_server_info  where 1=1 ;
-    ; 
